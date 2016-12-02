@@ -212,18 +212,21 @@ hide_edge_borders both
     bindsym mod1+n exec --no-startup-id xmodmap -e "pointer = 1 2 3 " #Right handed
     bindsym mod1+m exec --no-startup-id xmodmap -e "pointer = 3 2 1 " #Left handed
     bindsym mod1+r exec --no-startup-id redshift -l 24.713552:46.675296
+    bindsym mod1+k exec --no-startup-id killall redshift
 
 
 for_window [instance=gcolor2] sticky enable
 
-for_window [class="vlc"] floating enable
+for_window [class="Vlc"] floating enable
 for_window [class ="qBittorrent"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Youtube-dl-gui"] floating enable
 for_window [class="Blueman-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Xfce4-panel"] floating enable
-
+for_window [class="Xarchiver"] floating enable
+#for_window [class="0000000000"] floating enable
+#for_window [class="0000000000"] floating enable
 
 for_window [class="Firefox"] border pixel 0
 
